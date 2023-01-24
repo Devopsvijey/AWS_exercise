@@ -1,0 +1,41 @@
+
+Currently i am in Asia-pacific Tokyo region,
+
+Now, i created an Instance by using Launch instance,
+
+Os: Ubuntu, Micro T1, Instance key - mykey.pem, Security group - Default, Volume - 10GB, 
+
+after successful starting, 
+
+i used MobaXtreme to navigate into my Ubuntu VM.
+
+I perform git_exercises, linux_exercises and docker_exercises _ these are the changes i have done in this ec2 VM.
+
+Now, come to AWS console, Select the Instance,
+
+Go to Actions, Select "Create Images"
+
+Give name and other details and finally create Image.
+
+In the left side Go to AMIs Under Images, see our saved Images.
+
+Now, select the AMI ehich we want to use, Go to Action -->> Copy AMI,
+
+In this page, Give name, Select Region which we want to transfer (I use N.Virginia) and click Copy AMI button.
+
+
+
+Now, In top Right corner, near by our username section, Choose different region, i use N.Virginia.
+
+Now, go to Images -->> AMIs section, check our Image copied from Previous region (Tokyo). It will takes few minutes to copy 
+
+completely the images. Once, copy get completed, Choose the AMI which we copied and click Launch Instance Button,
+
+This will ask Keypair and Security details, Not OS, because, it is copied from AMI images.
+
+After successful starting of Instance here, Navigate into our VM through  MobaXtreme and see ls -l in /home/ubuntu area,
+
+All our files which we create in that previous instance completely transferred here successfully.
+
+
+
